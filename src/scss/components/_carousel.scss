@@ -1,0 +1,12 @@
+@use "../../../node_modules/bootstrap/scss/bootstrap" as bs;
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+
+  @include bs.media-breakpoint-down(md){
+    height: 500px;
+    object-fit: cover;
+  }
+}

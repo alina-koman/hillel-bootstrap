@@ -20,5 +20,8 @@
     "postcss-discard-comments": "^7.0.4",
     "postcss-sort-media-queries": "^5.2.0",
     "sass": "^1.89.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
   }
 }

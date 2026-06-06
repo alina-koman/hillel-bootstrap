@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
-  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header class="p-3 bg-dark text-white mb-5">
+<header class="p-3 bg-dark text-white mb-4">
   <nav class="navbar navbar-expand-lg navbar bg-dark border-bottom border-body" data-bs-theme="dark">
     <div class="container-fluid">
       <h1 class="navbar-brand fs-4 mb-0">Навігація</h1>
@@ -48,8 +48,16 @@
 
 <main class="mb-5">
   <div class="container">
-    <div class="row g-2">
-      <aside class="col-md-3 d-flex flex-column justify-content-between" style="min-height: 600px;">
+    <div class="p-2 p-md-5 mb-4 bg-dark text-white rounded-3" data-bs-theme="dark">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Кастомний джамботрон</h1>
+        <p class="col-md-8 fs-4">Використовуючи серію службових класів, ви можете створити цей джамботрон, точно такий самий, як у попередніх версіях Bootstrap. Ознайомтеся з прикладами нижче, щоб дізнатися, як його можна змінити та стилізувати на свій смак.</p>
+        <button class="btn btn-primary btn-lg" type="button">Кнопка прикладу</button>
+      </div>
+    </div>
+
+    <div class="row g-2 justify-content-center">
+      <aside class="col-md-3 d-flex flex-column justify-content-start" style="min-height: 600px;">
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Слайд 1"></button>
@@ -92,7 +100,7 @@
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <form class="row g-3 bg-dark text-white p-4">
+                <form class="row g-3 bg-dark text-white p-2">
                   <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">Електронна пошта</label>
                     <input type="email" class="form-control" id="inputEmail4">
@@ -151,22 +159,22 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Елемент акордеону #3
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>Це вміст третього елемента акордеона.</strong> Він прихований за замовчуванням, поки плагін згортання не додасть відповідні класи, які мы використовуємо для стилізації кожного елемента. Ці класи керують загальним виглядом, а також відображенням і приховуванням за допомогою CSS-переходів. Ви можете змінити будь-що з цього за допомогою власного CSS або перевизначивши наші стандартні змінні. Також варто зазначити, що всередині <code>.accordion-body</code> може бути практично будь-який HTML-код, хоча анімація дещо обмежує переповнення.
-              </div>
-            </div>
-          </div>
+<!--          <div class="accordion-item">-->
+<!--            <h2 class="accordion-header">-->
+<!--              <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">-->
+<!--                Елемент акордеону #3-->
+<!--              </button>-->
+<!--            </h2>-->
+<!--            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">-->
+<!--              <div class="accordion-body">-->
+<!--                <strong>Це вміст третього елемента акордеона.</strong> Він прихований за замовчуванням, поки плагін згортання не додасть відповідні класи, які мы використовуємо для стилізації кожного елемента. Ці класи керують загальним виглядом, а також відображенням і приховуванням за допомогою CSS-переходів. Ви можете змінити будь-що з цього за допомогою власного CSS або перевизначивши наші стандартні змінні. Також варто зазначити, що всередині <code>.accordion-body</code> може бути практично будь-який HTML-код, хоча анімація дещо обмежує переповнення.-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
         </div>
       </section>
 
-      <aside class="col-md-3">
+      <aside class="col-md-3 d-flex flex-column justify-content-start">
         <div class="card">
           <img src="images/cat2.jpg" class="card-img-top" alt="cat2">
           <div class="card-body">
@@ -181,7 +189,7 @@
   </div>
 </main>
 
-<footer class="py-5 border-top border-secondary bg-dark text-white">
+<footer class="py-4 border-top border-secondary bg-dark text-white">
   <div class="container">
     <div class="row">
 
@@ -225,13 +233,13 @@
           <div class="d-flex flex-column flex-sm-row w-100 gap-2">
             <label for="newsletter1" class="visually-hidden">Електронна адреса</label>
             <input id="newsletter1" type="email" class="form-control" placeholder="Електронна адреса">
-            <button class="btn btn-primary" type="button">Підписатися</button>
+            <button class="btn btn-primary" type="button">Відправити</button>
           </div>
         </form>
       </div>
     </div>
 
-    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top border-secondary">
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-2 border-top border-secondary">
       <p class="text-white-50">© 2026 Назва Компанії, Inc. Всі права захищені.</p>
       <ul class="list-unstyled d-flex">
         <li class="ms-3">
