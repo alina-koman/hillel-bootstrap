@@ -4,14 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 <header class="p-3 bg-dark text-white mb-5">
   <nav class="navbar navbar-expand-lg navbar bg-dark border-bottom border-body" data-bs-theme="dark">
     <div class="container-fluid">
-      <!-- Перетворили бренд на h1 і дали клас fs-4, щоб візуально розмір не змінився, але валідатор був задоволений -->
       <h1 class="navbar-brand fs-4 mb-0">Навігація</h1>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Перемикач навігації">
         <span class="navbar-toggler-icon"></span>
@@ -40,7 +38,6 @@
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <!-- Прибрано сліш /> наприкінці інпуту -->
           <input class="form-control me-2" type="search" placeholder="Пошук" aria-label="Пошук">
           <button class="btn btn-outline-success" type="submit">Знайти</button>
         </form>
@@ -150,7 +147,7 @@
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>Це вміст другого елемента акордеону.</strong> Він прихований за замовчуванням, поки плагін згортання не додасть відповідні класи, які ми використовуємо для стилізації кожного елемента. Ці класи керують загальним виглядом, а також відображенням і приховуванням за допомогою CSS-переходів. Ви можете змінити будь-що з цього за допомогою власного CSS або перевизначивши наші стандартні змінні. Також варто зазначити, що всередині <code>.accordion-body</code> може бути практично будь-який HTML-код, хоча анімація дещо обмежує переповнення.
+                <strong>Це вміст другого елемента акордеона.</strong> Він прихований за замовчуванням, поки плагін згортання не додасть відповідні класи, які ми використовуємо для стилізації кожного елемента. Ці класи керують загальним виглядом, а також відображенням і приховуванням за допомогою CSS-переходів. Ви можете змінити будь-що з цього за допомогою власного CSS або перевизначивши наші стандартні змінні. Також варто зазначити, що всередині <code>.accordion-body</code> може бути практично будь-який HTML-код, хоча анімація дещо обмежує переповнення.
               </div>
             </div>
           </div>
@@ -162,7 +159,7 @@
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>Це вміст третього елемента акордеону.</strong> Він прихований за замовчуванням, поки плагін згортання не додасть відповідні класи, які мы використовуємо для стилізації кожного елемента. Ці класи керують загальним виглядом, а також відображенням і приховуванням за допомогою CSS-переходів. Ви можете змінити будь-що з цього за допомогою власного CSS або перевизначивши наші стандартні змінні. Також варто зазначити, що всередині <code>.accordion-body</code> може бути практично будь-який HTML-код, хоча анімація дещо обмежує переповнення.
+                <strong>Це вміст третього елемента акордеона.</strong> Він прихований за замовчуванням, поки плагін згортання не додасть відповідні класи, які мы використовуємо для стилізації кожного елемента. Ці класи керують загальним виглядом, а також відображенням і приховуванням за допомогою CSS-переходів. Ви можете змінити будь-що з цього за допомогою власного CSS або перевизначивши наші стандартні змінні. Також варто зазначити, що всередині <code>.accordion-body</code> може бути практично будь-який HTML-код, хоча анімація дещо обмежує переповнення.
               </div>
             </div>
           </div>
@@ -189,7 +186,6 @@
     <div class="row">
 
       <div class="col-6 col-md-2 mb-3">
-        <!-- Змінено h5 на h3 + fs-5 -->
         <h3 class="fs-5">Навігація</h3>
         <ul class="nav flex-column">
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Головна</a></li>
@@ -201,7 +197,6 @@
       </div>
 
       <div class="col-6 col-md-2 mb-3">
-        <!-- Змінено h5 на h3 + fs-5 -->
         <h3 class="fs-5">Послуги</h3>
         <ul class="nav flex-column">
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Головна</a></li>
@@ -213,7 +208,6 @@
       </div>
 
       <div class="col-6 col-md-2 mb-3">
-        <!-- Змінено h5 на h3 + fs-5 -->
         <h3 class="fs-5">Ресурси</h3>
         <ul class="nav flex-column">
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Головна</a></li>
@@ -226,7 +220,6 @@
 
       <div class="col-md-5 offset-md-1 mb-3">
         <form>
-          <!-- Змінено h5 на h3 + fs-5 -->
           <h3 class="fs-5">Підпишіться на нашу розсилку</h3>
           <p class="text-white-50">Щомісячний дайджест усього нового та цікавого від нас.</p>
           <div class="d-flex flex-column flex-sm-row w-100 gap-2">
